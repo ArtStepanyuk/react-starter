@@ -4,12 +4,9 @@
     "browser": true,
     "jest": true
   },
+  "parser": "babel-eslint",
   "extends": ["airbnb", "prettier", "prettier/react"],
   "plugins": ["prettier"],
-  "ecmaFeatures": {
-    "jsx": true,
-    "modules": true
-  },
   "rules": {
     "react/jsx-filename-extension": [
       1,
