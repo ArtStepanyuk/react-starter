@@ -3,10 +3,10 @@ import { updateSearchQuery } from '../actions'
 import Search from '../components/Search'
 
 const mapDispatchToProps = {
-	updateSearchQuery
+  updateSearchQuery
 }
 
 export default connect(
-	null,
-	mapDispatchToProps
+  null,
+  mapDispatchToProps
 )(Search)

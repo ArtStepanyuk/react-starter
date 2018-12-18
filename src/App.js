@@ -6,7 +6,7 @@ import React from 'react'
 
 library.add(fas, far, fab)
 function App() {
-	return <div>hi</div>
+  return <div>hi</div>
 }
 
 export default App

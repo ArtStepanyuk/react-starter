@@ -3,11 +3,11 @@ import { toggleCompleted, removeTodo } from '../../actions'
 import TodoItem from '../../components/Todos/TodoItem'
 
 const mapDispatchToProps = {
-	toggleCompleted,
-	removeTodo
+  toggleCompleted,
+  removeTodo
 }
 
 export default connect(
-	null,
-	mapDispatchToProps
+  null,
+  mapDispatchToProps
 )(TodoItem)
