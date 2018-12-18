@@ -3,6 +3,7 @@ import { Row, Col, Button } from 'reactstrap'
 import ToDosListContainer from '../containers/Todos/ToDosListContainer'
 import SearchContainer from '../containers/SearchContainer'
 import AddTodoContainer from '../containers/Todos/AddTodoContainer'
+import AppNavbarContainer from '../containers/NavbarContainer'
 import colHelpers from '../utils'
 
 export default class Layout extends Component {
@@ -18,6 +19,7 @@ export default class Layout extends Component {
     const { showModal } = this.state
     return (
       <Fragment>
+        <AppNavbarContainer />
         <Row className="pt-5">
           <AddTodoContainer showModal={showModal} onCloseModal={this.toggleState} />
           <Col sm={colHelpers.sizeOneOffsetOne}>

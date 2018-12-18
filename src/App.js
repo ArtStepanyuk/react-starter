@@ -1,12 +1,7 @@
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fas } from '@fortawesome/free-solid-svg-icons'
-import { far } from '@fortawesome/free-regular-svg-icons'
-import { fab } from '@fortawesome/free-brands-svg-icons'
 import React from 'react'
+import { ConnectedRouter } from 'connected-react-router'
+import routes from './routes'
 
-library.add(fas, far, fab)
-function App() {
-  return <div>hi</div>
-}
+const App = ({ history }) => <ConnectedRouter history={history}>{routes}</ConnectedRouter>
 
 export default App
