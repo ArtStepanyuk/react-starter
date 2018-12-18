@@ -9,11 +9,11 @@ const itemStyle = css`
   }
 `
 
-export default function TodoItem({ removeTodo, toggleCompleted, text, id, completed }) {
+export default function TodoItem({ removeTodo, toggleCompleted, title, id, completed }) {
   return (
     <div className={itemStyle}>
       <Alert color={completed ? 'primary' : 'secondary'}>
-        {text} - {completed ? 'Done' : 'Undone'}
+        {title} - {completed ? 'Done' : 'Undone'}
         <div>
           <Button outline color="warning" onClick={() => toggleCompleted(id)}>
             {completed ? 'Undone' : 'Done'}

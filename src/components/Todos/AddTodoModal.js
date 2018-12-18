@@ -8,7 +8,7 @@ export default class AddTodoModal extends Component {
     super(props)
     this.state = {
       completed: false,
-      text: ''
+      title: ''
     }
   }
 
@@ -22,13 +22,13 @@ export default class AddTodoModal extends Component {
     const { value } = event.target
     this.setState(prev => ({
       ...prev,
-      text: value
+      title: value
     }))
   }
 
   isDisabled = () => {
-    const { text } = this.state
-    return !text.trim().length > 0
+    const { title } = this.state
+    return !title.trim().length > 0
   }
 
   render() {

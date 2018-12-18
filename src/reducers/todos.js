@@ -1,8 +1,18 @@
-import { TOGGLE_COMPLETED, ADD_TODO, REMOVE_TODO, UPDATE_SEARCH_QUERY } from '../constants'
+import {
+  TOGGLE_COMPLETED,
+  ADD_TODO,
+  REMOVE_TODO,
+  UPDATE_SEARCH_QUERY,
+  ITEMS_ARE_LOADING,
+  ITEMS_ARE_LOADED,
+  ITEMS_HAVE_ERROR
+} from '../constants'
 
 const initialState = {
   searchQuery: '',
-  items: []
+  items: [],
+  hasError: false,
+  loading: false
 }
 
 export default function(state = initialState, action) {
@@ -43,6 +53,24 @@ export default function(state = initialState, action) {
         items: state.items.filter(i => i.id !== id)
       }
     }
+
+    case ITEMS_HAVE_ERROR:
+      return {
+        ...state,
+        hasError: action.payload
+      }
+
+    case ITEMS_ARE_LOADING:
+      return {
+        ...state,
+        loading: action.payload
+      }
+
+    case ITEMS_ARE_LOADED:
+      return {
+        ...state,
+        items: [...action.payload]
+      }
 
     default:
       return state
