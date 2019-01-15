@@ -34,7 +34,8 @@
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "never"],
-    "no-console": 0
+    "no-console": 0,
+    "import/prefer-default-export": 0
   },
   "globals": {
     "window": true,
