@@ -10,4 +10,3 @@ const store = createStore(reducer(), composeEnhancer(applyMiddleware(sagaMiddlew
 sagaMiddleware.run(sagas)
 
 export default store
-// rest unchanged

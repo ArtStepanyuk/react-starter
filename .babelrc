@@ -3,7 +3,8 @@
     "@babel/transform-react-constant-elements",
     "@babel/transform-react-inline-elements",
     "@babel/transform-runtime",
-    "transform-es2015-modules-commonjs"
+    "transform-es2015-modules-commonjs",
+    "emotion"
   ],
   "presets": ["@babel/preset-env", "@babel/preset-react"],
   "env": {

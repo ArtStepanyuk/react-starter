@@ -1,2 +1,4 @@
 export const GET_NEWS = 'GET_NEWS'
 export const SET_NEWS = 'SET_NEWS'
+export const ITEMS_LOADING_START = 'ITEMS_LOADING_START'
+export const ITEMS_LOADING_DONE = ',ITEMS_LOADING_DONE'

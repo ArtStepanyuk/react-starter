@@ -8,9 +8,9 @@ import * as serviceWorker from './serviceWorker'
 import store from './storeCreator'
 
 const Root = () => (
-	<Provider store={store}>
-		<App />
-	</Provider>
+  <Provider store={store}>
+    <App />
+  </Provider>
 )
 
 ReactDOM.render(<Root />, document.getElementById('root'))

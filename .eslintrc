@@ -4,12 +4,9 @@
     "browser": true,
     "jest": true
   },
+  "parser": "babel-eslint",
   "extends": ["airbnb", "prettier", "prettier/react"],
   "plugins": ["prettier"],
-  "ecmaFeatures": {
-    "jsx": true,
-    "modules": true
-  },
   "rules": {
     "react/jsx-filename-extension": [
       1,
@@ -30,7 +27,7 @@
     "no-underscore-dangle": 0,
     "import/imports-first": ["error", "absolute-first"],
     "import/newline-after-import": "error",
-    "indent": ["error", "tab"],
+    "indent-size": [true, 2],
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "never"],
